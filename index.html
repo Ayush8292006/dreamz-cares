@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dreamz Care</title>
+<link rel="icon" href="images/emblem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#8A6A28"/><stop offset=".4" stop-color="#E4C67E"/><stop offset="1" stop-color="#9A7A36"/></linearGradient>
+  <linearGradient id="gloss" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".1"/><stop offset=".2" stop-color="#fff" stop-opacity=".5"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".16"/></linearGradient>
+</defs></svg>
+
+<div class="intro" aria-hidden="true">
+  <div class="half top"></div><div class="half bot"></div>
+  <div class="mark">
+    <img src="images/crown.jpg" alt="">
+    <div class="word"><span style="--i:0">D</span><span style="--i:1">R</span><span style="--i:2">E</span><span style="--i:3">A</span><span style="--i:4">M</span><span style="--i:5">Z</span></div>
+    <div class="care">Care</div>
+    <div class="tagline">Skincare · Makeup · Haircare</div>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<div class="promo" id="promo">
+  <div>BUY ANY 3 Dreamz favourites at only ₹1199</div>
+  <div hidden>Free shipping above ₹999 · COD available</div>
+  <div hidden>Extra 10% off on prepaid orders · Code DREAMZ10</div>
+</div>
+
+<header class="enter">
+  <div class="wrap hrow">
+    <div class="nav">
+      <button class="icon" id="menuBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <nav class="links">
+        <a href="#favorites" class="hot">FESTIVE FLASH SALE</a>
+        <a href="#bundles">Combos</a>
+        <a href="#favorites" data-tab="Best Sellers">Bestsellers</a>
+        <a href="#favorites" data-all>Shop All</a>
+        <a href="#bundles">Super Saving Deals 🎁</a>
+      </nav>
+    </div>
+    <a href="#top" class="brand" aria-label="Dreamz Care home"><img src="images/emblem.png" alt=""><span class="wm"><b>DREAMZ</b><small>Care</small></span></a>
+    <div class="tools">
+      <button class="icon" id="searchBtn" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
+      <a class="icon acc" href="#top" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></a>
+      <button class="icon" id="openCart" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="count" id="count">0</span></button>
+    </div>
+  </div>
+  <nav class="wrap mobnav" id="mobnav">
+    <a href="#favorites">Festive Flash Sale</a><a href="#bundles">Combos</a><a href="#favorites" data-tab="Best Sellers">Bestsellers</a><a href="#favorites" data-all>Shop All</a><a href="#bundles">Super Saving Deals</a>
+  </nav>
+  <div class="wrap searchbar" id="searchbar" hidden><label for="q" hidden>Search</label><input id="q" type="search" placeholder="Search for serum, sunscreen, lipstick..."></div>
+</header>
+
+<main id="top">
+  <section class="hero enter" style="--d:.1s" aria-label="Featured">
+    <div class="track" id="track">
+      <div class="slide"><div class="wrap inner">
+        <div class="copy">
+          <div class="kick"><i></i>Powered by 10% Vitamin C + Kesar</div>
+          <h1>Kesar Glow Serum</h1>
+          <div class="targets"><b>Targets:</b> Dullness · Dark Spots · Uneven Tone</div>
+          <div class="it">Visible glow in 14 days</div>
+          <div class="prow">₹799 <s>₹999</s><em>20% OFF</em></div>
+          <button class="btn" data-open="1">Shop Now</button>
+        </div>
+        <div class="art" id="art1"></div>
+      </div></div>
+      <div class="slide"><div class="wrap inner">
+        <div class="copy">
+          <div class="kick"><i></i>Festive special kit</div>
+          <div class="h1">Day &amp; Night Glow Kit</div>
+          <div class="targets"><b>Includes:</b> Serum · Night Cream · Sunscreen</div>
+          <div class="it">Complete AM–PM routine in one box</div>
+          <div class="prow">₹1,499 <s>₹1,947</s><em>23% OFF</em></div>
+          <button class="btn" id="kitBtn">Add Kit To Cart</button>
+        </div>
+        <div class="art" id="art2"></div>
+      </div></div>
+      <div class="slide"><div class="wrap inner">
+        <div class="copy">
+          <div class="kick"><i></i>New in makeup</div>
+          <div class="h1">Velvet Matte Lipsticks</div>
+          <div class="targets"><b>Finish:</b> Matte · Transfer-proof · 8-hr stay</div>
+          <div class="it">Enriched with Vitamin E</div>
+          <div class="prow">From ₹349</div>
+          <button class="btn" data-tab="Makeup">Explore Shades</button>
+        </div>
+        <div class="art" id="art3"></div>
+      </div></div>
+    </div>
+    <div class="pager" id="pager"></div>
+  </section>
+
+  <section class="sec wrap" id="favorites">
+    <div class="st enter" style="--d:.25s"><h2>All Time Favorites</h2></div>
+    <div class="tabs enter" style="--d:.3s" id="tabs" role="group" aria-label="Product type"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="sec wrap" id="concerns" style="padding-top:12px">
+    <div class="st reveal"><h2>Shop by Concerns</h2></div>
+    <div class="concerns" id="concernList"></div>
+  </section>
+
+  <section class="band" id="bundles">
+    <div class="wrap bundle-wrap">
+      <div class="lead reveal">
+        <h2>Build Your Own Bundle</h2>
+        <p>Save upto 45% on Products</p>
+        <div class="arrows"><button id="bPrev" aria-label="Previous bundles"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg></button><button id="bNext" aria-label="Next bundles"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></button></div>
+      </div>
+      <div class="bscroll" id="bscroll"></div>
+    </div>
+  </section>
+
+  <section class="marquee" aria-label="Our promises"><div class="mtrack" id="mtrack"></div></section>
+
+  <section class="band guar">
+    <div class="wrap sec">
+      <div class="st reveal"><small>Your Satisfaction Comes First With Our</small><h2>7 Days Money Back Guarantee</h2></div>
+      <div class="hscroll" id="guarRow"></div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="reviews">
+    <div class="happy-h reveal"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 2 2.5 3 4 3s3-1 4-3M9 9.5h.01M15 9.5h.01"/></svg><h2>Over <b>25,000+</b> Happy Customers</h2></div>
+    <div class="rscroll" id="rscroll"></div>
+  </section>
+
+  <section class="wrap" style="padding-bottom:44px">
+    <div class="clinic reveal">
+      <div class="l">
+        <h2>Dermatologically Tested.<b>Customer Loved.</b></h2>
+        <div class="stats">
+          <div><b>8/10</b><span>Customers buy again</span></div>
+          <div><b>12+</b><span>Products</span></div>
+          <div><b>25k+</b><span>Happy customers</span></div>
+        </div>
+        <div class="seals"><div class="seal">DERMAT<br>TESTED</div><div class="seal">MADE IN<br>INDIA</div><div class="seal">PARABEN<br>FREE</div><div class="seal">CRUELTY<br>FREE</div></div>
+      </div>
+      <div class="r" id="clinicArt"></div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="about" style="padding-top:0">
+    <div class="story">
+      <div class="pic reveal"><img src="images/logo.jpg" alt="Dreamz Care logo"></div>
+      <div class="reveal" style="--d:.1s">
+        <h2>The Dreamz Care Story</h2>
+        <p>Dreamz Care began with one belief: every Indian woman deserves skincare that is safe, effective and fairly priced.</p>
+        <p>We blend trusted Indian ingredients like kesar, rose, ubtan and neem with proven actives such as vitamin C, niacinamide and ceramides. Every formula is tested on Indian skin types before it reaches you.</p>
+        <div class="sign">Care fit for a queen.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faqband">
+    <div class="wrap faq">
+      <div class="l reveal"><h2>We're answerable!</h2><p>Simple answers to the questions we hear most.</p></div>
+      <div class="reveal" style="--d:.1s">
+        <details open><summary>What makes Dreamz Care different from other brands?</summary><p>We combine traditional Indian ingredients with proven actives, and keep every formula free from parabens, sulphates and mineral oil.</p></details>
+        <details><summary>Are Dreamz Care products safe for sensitive skin?</summary><p>Yes. All products are dermatologically tested. We still suggest a patch test before first use.</p></details>
+        <details><summary>How long does delivery take?</summary><p>3–5 working days in metro cities and 5–7 days for the rest of India.</p></details>
+        <details><summary>Are Dreamz Care products cruelty-free?</summary><p>Yes. We never test on animals at any stage.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap foot">
+    <div>
+      <p class="quote">"Every skin deserves a royal touch"</p>
+      <form class="email" id="newsForm"><label for="email" hidden>Email</label><input id="email" type="email" required placeholder="Email"><button type="submit" aria-label="Subscribe"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></button></form>
+      <div class="social">
+        <a href="#top" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+        <a href="#top" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8Z"/></svg></a>
+        <a href="#top" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z"/></svg></a>
+      </div>
+    </div>
+    <div><h4>Shop Now</h4><ul><li><a href="#favorites" data-all>All products</a></li><li><a href="#favorites" data-tab="Best Sellers">Best Sellers</a></li><li><a href="#favorites" data-tab="Haircare">Hair Care</a></li><li><a href="#favorites" data-tab="Serums">Skin Care</a></li><li><a href="#favorites" data-tab="Makeup">Makeup</a></li></ul></div>
+    <div><h4>Support</h4><ul><li><a href="#top">Terms and Conditions</a></li><li><a href="#top">Returns &amp; Exchange Policy</a></li><li><a href="#top">Shipping Policy</a></li><li><a href="#top">Privacy Policy</a></li></ul></div>
+    <div><h4>Quick links</h4><ul><li><a href="#about">About Us</a></li><li><a href="#top">Contact</a></li><li><a href="#top">Bulk Orders</a></li><li><a href="#top">Track Order</a></li></ul></div>
+  </div>
+  <div class="wrap fbot"><span>© 2026 Dreamz Care. All rights reserved.</span><div class="pay"><span>UPI</span><span>VISA</span><span>MASTERCARD</span><span>RUPAY</span><span>COD</span></div></div>
+</footer>
+
+<nav class="mbar" aria-label="Quick links">
+  <a href="#top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4Z"/></svg>Home</a>
+  <a href="#favorites" data-tab="Best Sellers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l2.6 5.6 6 .6-4.5 4 1.3 6L12 16l-5.4 3.2 1.3-6-4.5-4 6-.6Z"/></svg>Bestsellers</a>
+  <a href="#bundles"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7c-2 0-5-1-5-3s3-1 5 3c2-4 5-5 5-3s-3 3-5 3Z"/></svg>Value Deals</a>
+  <a href="#top" class="wa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7Z"/><path d="M9 9c0 3 3 6 6 6l1-1.5-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2Z"/></svg>WhatsApp</a>
+</nav>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="mbox" role="dialog" aria-label="Product details">
+    <button class="mclose" id="mclose" aria-label="Close">×</button>
+    <div class="mimg" id="mimg"></div>
+    <div class="minfo" id="minfo"></div>
+  </div>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Cart" aria-hidden="true">
+  <div class="dhead"><h3>Your Cart</h3><button class="x" id="closeCart" aria-label="Close cart">×</button></div>
+  <div class="shipbar"><span id="shipMsg"></span><div class="pb"><i id="shipPb" style="width:0"></i></div></div>
+  <div class="items" id="items"></div>
+  <div class="dfoot">
+    <div class="row muted"><span>MRP total</span><span id="mrpT">₹0</span></div>
+    <div class="row muted"><span>Discount</span><span id="discT" style="color:var(--green)">−₹0</span></div>
+    <div class="row muted"><span>Shipping</span><span id="shipT">—</span></div>
+    <div class="row total"><span>Total</span><span id="total">₹0</span></div>
+    <button class="btn" id="checkout">Checkout</button>
+  </div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
